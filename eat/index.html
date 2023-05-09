@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com.css?family=poppins" reL="stylesheet">
+
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #47c98e;">
+        <div id="navbar" class="container p-3" style="border-radius: 13px;">
+            <a href="#" class="navbar-brand">Something</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span
+                    class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a id="navLink" href="#" class="nav-link">Log In</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a id="navLink" style="margin-right: 25px;" href="#" class="nav-link">Create Account</a>
+                    </li>
+
+                    <div class="col">
+                        <select class="form-select" name="changeLanguage" id="languages" style="font-weight: bold;">
+                            <option value="placeholder" style="font-weight: bold;">Language</option>
+                            <option value="english" style="font-weight: bold;">English</option>
+                            <option value="russian" style="font-weight: bold;">Russian</option>
+                            <option value="uzbek" style="font-weight: bold;">Polish</option>
+                            <option value="uzbek" style="font-weight: bold;">Uzbek</option>
+                        </select>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Search and showcase -->
+
+    <section class="text-light p-3 pb-5 text-center" style="background-color: #47c98e;">
+        <div class="container">
+            <div>
+                <h1 id="buyurtma">Time to order food</h1>
+                <h3 id="textColor">Manzilingizni kiriting va xududingizdagi oshxonalardan tanlang!</h3>
+                <div class="row pt-4">
+                    <div class="col d-flex justify-content-center">
+                        <div class="input-group mb-1" style="width: 550px;">
+                            <input type="search" class="form-control form-control-lg" placeholder="Shahringizni kiriting" aria-label="shahringiz"aria-describedby="basic-addon1">
+                            <span class="input-group-text" style="background-color: #dbd2c1;" id="basic-addon1"><iclass="bi bi-building" style="color: black;"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Offers section -->
+
+    <section class="p-5" style="background-color: #dbd2c1;">
+        <div class="container">
+            <div class="row text-center g-4">
+
+                <div class="col-md">
+                    <div class="card" id="topCard">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <img src="images/cardFood.png" alt="favFood" class="card-img-top" style="width: 60px;">
+                            </div>
+                            <h3 class="card-title mb-3" id="topCardTitle">
+                                Your favourite
+                            </h3>
+                            <p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum voluptas
+                            </p>
+                        </div>
+                        <div class="card-button mt-2 mb-3">
+                            <a href="#" class="btn" id="topCardBtn">Your favourite</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div id="topCard" class="card">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <img src="images/restaurant.png" alt="Top restaurants" class="card-img-top"
+                                    style="width: 60px;">
+                            </div>
+                            <h3 class="card-title mb-3" id="topCardTitle">
+                                Top Restaurants
+                            </h3>
+                            <p class="mb-0">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit esse doloribu
+                            </p>
+                        </div>
+                        <div class="card-button mt-2 mb-3">
+                            <a href="#" class="btn" id="topCardBtn">Top restaurants</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div id="topCard" class="card">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <img src="images/chef.png" alt="Chef" class="card-img-top" style="width: 60px;">
+                            </div>
+                            <h3 class="card-title mb-3" id="topCardTitle">
+                                Chef's Choice
+                            </h3>
+                            <p class="mb-0">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit esse doloribu
+                            </p>
+                        </div>
+                        <div class="card-button mt-2 mb-3">
+                            <a href="#" class="btn" id="topCardBtn">Chef's choice</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- How it works?? -->
+
+    <section class="text-center p-4 text-light" style="background-color: #47c98e;">
+        <div class="container">
+            <h2 style="font-weight: bold;">How it works</h2>
+            <h1 id="easy">Easy as that!</h1>
+
+            <div class="card-group pt-2 pb-4">
+                <div class="card m-2" style="background-color: #dbd2c1; border-radius: 10px">
+                    <div class="card-body text-dark">
+                        <img id="easyImage" class="card-img-top" src="images/location.png" alt="location">
+                        <h4 class="card-title">1. Just enter your location and ssd</h4>
+                        <p class="card-text">Enter your street address or let us find your location.</p>
+                    </div>
+                </div>
+
+                <div class="card m-2" style="background-color: #dbd2c1; border-radius: 10px;">
+                    <div class="card-body text-dark">
+                        <img id="easyImage" class="card-img-top" src="images/fast-food.png" alt="choose food">
+                        <h4 class="card-title">2. Choose your restaurant and food</h4>
+                        <p class="card-text">What do you fancy? Browse through countless menus and reviews.</p>
+                    </div>
+                </div>
+
+                <div class="card m-2" style="background-color: #dbd2c1; border-radius: 10px;">
+                    <div class="card-body text-dark">
+                        <img id="easyImage" class="card-img-top" src="images/delivery.png"
+                            alt="get delivered your food">
+                        <h4 class="card-title">3. Pay and get your food delivered</h4>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, quas
+                            eligendi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Download app -->
+
+    <!-- <section class="p-4 text-light text-center" style="background-color: indianred;">
+        <div class="row">
+            <div class="col" style="padding-top: 70px;">
+                <h2 style="background-color: indigo;">Download the app</h2>
+                <h2 style="background-color: indigo;">Make it easier for yourself</h2>
+                <div class="row" style="padding-top: 70px; margin-left: 100px;">
+                    <a href="#" style="width: 150px;"><img src="images/Screenshot 2021-08-30 000201.png"
+                            alt="Google play" style="margin: 10px 0;"></a>
+                    <a href="#" style="width: 150px;"><img src="images/Screenshot 2021-08-30 000308.png" alt="App store"
+                            style="margin: 10px 10px;"></a>
+                </div>
+
+            </div>
+            <div class="col">
+                <img src="images/smartphone.png" alt="" style="height: 400px; margin-left: 200px;">
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- Your time section -->
+
+    <section class="p-5 pt-3 text-light text-center" style="background-color:#dbd2c1;">
+        <div class="container">
+            <a href="#" style="font-size: 30px; font-weight: bold; text-decoration: none; color: #fff">Eat.uz</a>
+            <h1 id="buyurtma" style="font-size: 45px;">Your time!</h1>
+            <div class="row g-4 p-3">
+
+                <div class="col-md">
+                    <div class="card" style="height: 280px; background-color: #47c98e;">
+                        <div class="card-body text-dark">
+                            <img id="urtimeImage" class="card-img-top" src="images/gift.png" alt="Your bonus"
+                                style="width: 70px;">
+                            <h4 class="card-title p-1" style="font-weight: bold;">YOUR BONUS</h4>
+                            <p class="card-text"><span>&#10004</span> The Punkty programme: collect points and redeem
+                                them for great offers</p>
+                            <p class="card-text"><span>&#10004</span> Receive stamps, promotions, discounts, news and
+                                more, via our newsletters and social channels</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card" style="height: 280px; background-color: #47c98e;">
+                        <div class="card-body text-dark">
+                            <img id="urtimeImage" class="card-img-top" src="images/gurante.png" alt="Gurantee"
+                                style="width: 70px;">
+                            <h4 class="card-title p-1" style="font-weight: bold;">YOUR GURANTEE</h4>
+                            <p class="card-text"><span>&#10004</span> Excellent service</p>
+                            <p class="card-text"><span>&#10004</span> Authentic user reviews</p>
+                            <p class="card-text"><span>&#10004</span> Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card" style="height: 280px; background-color: #47c98e;">
+                        <div class="card-body text-dark">
+                            <img id="urtimeImage" class="card-img-top" src="images/benefits.png" alt="Benefits"
+                                style="width: 70px;">
+                            <h4 class="card-title p-1" style="font-weight: bold;">YOUR BENEFITS</h4>
+                            <p class="card-text"><span>&#10004</span> More then 2000 restaurants to choose from</p>
+                            <p class="card-text"><span>&#10004</span> Pay online (remotely)</p>
+                            <p class="card-text"><span>&#10004</span> Order anytime, anywhere, on any device</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Cities we service in -->
+
+    <section class="text-light text-center p-4 pb-5" style="background-color: #47c98e;">
+        <div class="container">
+            <h1 class="pb-3" style="font-weight: bold;">Cities we service in</h1>
+            <div class="row">
+
+                <div class="col">
+                    <a id="cityHover" href="#">
+                        <div class="card bg-dark text-light">
+                            <div class="imgBox">
+                                <img src="images/london.jpg" alt="city" class="card-img">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h3>Toshkent</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a id="cityHover" href="#">
+                        <div class="card bg-dark text-light">
+                            <div class="imgBox">
+                                <img src="images/london.jpg" alt="city" class="card-img">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h3>Andijon</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a id="cityHover" href="#">
+                        <div class="card bg-dark text-light">
+                            <div class="imgBox">
+                                <img src="images/london.jpg" alt="city" class="card-img">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h3>Farg'ona</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="cityHover" class="col">
+                    <a href="#">
+                        <div class="card bg-dark text-light">
+                            <div class="imgBox">
+                                <img src="images/london.jpg" alt="city" class="card-img">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h3>Namangan</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col">
+                    <a id="cityHover" href="#">
+                        <div class="card bg-dark text-light">
+                            <div class="imgBox">
+                                <img src="images/london.jpg" alt="city" class="card-img">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h3>Qo'qon</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a id="cityHover" href="#">
+                        <div class="card bg-dark text-light">
+                            <div class="imgBox">
+                                <img src="images/london.jpg" alt="city" class="card-img">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h3>Buxoro</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a id="cityHover" href="#">
+                        <div class="card bg-dark text-light">
+                            <div class="imgBox">
+                                <img src="images/london.jpg" alt="city" class="card-img">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h3>Qarshi</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a id="cityHover" href="#">
+                        <div class="card bg-dark text-light">
+                            <div class="imgBox">
+                                <img src="images/london.jpg" alt="city" class="card-img">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h3>Samarkand</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Want more section -->
+
+    <section class="text-dark text-center p-5 d-flex" style="background-color:#dbd2c1;">
+        <div class="container">
+            <div class="row">
+
+                <div class="col">
+                    <h3>Want more?</h3>
+                    <h4>Check out exciting news about food and lifestyle on our blog.</h4>
+                    <h5 style="padding-top: 10px;"><a href="#">>Visit the blog</a></h5>
+                </div>
+
+                <div class="col">
+                    <img src="images/smart-tv.png" alt="" style="width: 200px;">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Text section -->
+
+    <section class="text-light text-center d-flex p-4 pb-2" style="background-color: #dbd2c1;">
+        <div class="container" style="background-color: #47c98e; border-radius: 15px;">
+            <h4 class="text-center p-2">
+                Order your favorite food quickly and conveniently with delivery at Eat
+            </h4>
+            <div class="border"></div>
+            <p style="font-size: 18px;">
+                Are you looking for a restaurant that offers take-out food? Eat.uz is the largest online food ordering
+                service in Uzbekistan. A lot of the restaurants available on the Eat.uz platform offer food delivery, so
+                you can enjoy your favorite pizza, sushi, kebab, dumplings and other dishes wherever you are: at home,
+                at work, during a party or meeting with friends. If you can't decide what you want today, use the search
+                filters and choose the place in terms of, for example, the opinions of other users or chefs, world
+                cuisine or the minimum order amount. Save time and money - throw away flyers and discover new
+                restaurants with delivery near you! Eat.uz wishes you a tasty meal
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+
+    <section class="text-center d-flex p-3" style="background-color: #dbd2c1;">
+        <div class="container">
+            <div class="row">
+
+                <div class="col">
+                    <h4 id="indicator">Information</h4>
+                    <a id="downLink" href="#">Help</a>
+                    <hr>
+                    <a id="downLink" href="#">Blog</a>
+                    <hr>
+                    <a id="downLink" href="#">Contact</a>
+                    <hr>
+                    <a id="downLink" href="#">Legal information</a>
+                    <hr>
+                </div>
+
+                <div class="col">
+                    <h4 id="indicator">Work with us</h4>
+                    <a id="downLink" href="#">Become a supplier</a>
+                    <hr>
+                    <a id="downLink" href="#">Add your restaurant</a>
+                    <hr>
+                    <a id="downLink" href="#">Career</a>
+                    <hr>
+                </div>
+
+                <div class="col">
+                    <h4 id="indicator">Social</h4>
+                    <a id="downIcon" href="#"><i class="bi bi-facebook"></i></a>
+                    <a id="downIcon" href="#"><i class="bi bi-instagram"></i></a>
+                    <a id="downIcon" href="#"><i class="bi bi-twitter"></i></a>
+                    <a id="downIcon" href="#"><i class="bi bi-linkedin"></i></a>
+
+                    <select class="form-select" name="changeLanguage" id="languages"
+                        style="width: 200px; font-weight: bold; margin: 30px auto auto 80px">
+                        <option value="placeholder" style="font-weight: bold;">Language</option>
+                        <option value="english" style="font-weight: bold;">English</option>
+                        <option value="russian" style="font-weight: bold;">Russian</option>
+                        <option value="uzbek" style="font-weight: bold;">Polish</option>
+                        <option value="uzbek" style="font-weight: bold;">Uzbek</option>
+                    </select>
+
+                    <div class="row" style="padding-top: 30px;">
+                        <a href="#" style="width: 150px; margin-left: 15px;"><img
+                                src="images/Screenshot 2021-08-30 000201.png" alt="Google play"></a>
+                        <a href="#" style="width: 150px; margin-left: 15px;"><img
+                                src="images/Screenshot 2021-08-30 000308.png" alt="App store"></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Last footer -->
+
+    <section class="p-4 pt-3" style="background-color: #47c98e;">
+        <div class="container text-center">
+            <div style="justify-content: center; align-items: center;">
+                <a id="footerLinks" href="#">Recommend restaurant</a>
+                <a id="footerLinks" href="#">Sign up a restaurany</a>
+                <a id="footerLinks" href="#">Jobs</a>
+                <a id="footerLinks" href="#">Terms of use</a>
+                <a id="footerLinks" href="#">Privacy statement</a>
+                <a id="footerLinks" href="#">Cookie statement</a>
+                <a id="footerLinks" href="#">Bug bounty</a>
+            </div>
+            <h6 class="pt-3">
+                © 2021 Eat.uz
+            </h6>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

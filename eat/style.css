@@ -1,0 +1,158 @@
+@import url('https://googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#navLink{
+    font-size: 18px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+#buyurtma{
+    font-weight: 800;
+    font-size: 50px;
+    overflow: hidden;
+    /* border-right: .1px solid white; */
+    white-space: nowrap;
+    margin: 5px auto 15px;
+    animation: typing 4s steps(200, end), blink-caret .75s step-end infinite;
+}
+
+
+@keyframes typing{
+    from {width: 0} to {width: 100%}
+}
+
+#textColor{
+    font-weight: bold;
+    /* color: #dbd2c1; */
+    
+}
+
+#topCard{
+    border-radius: 15px;
+    background-color: #47c98e;
+}
+
+#topCardTitle{
+    font-weight: bold;
+}
+
+#topCardBtn{
+    background-color: #dbd2c1; 
+    font-weight: 600;
+}
+
+#topBtn{
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.card-text{
+    font-weight: bold;
+}
+
+
+#easy{
+    font-weight: bold;
+    /* color: #e7b748; */
+    overflow: hidden;
+    /* border-right: .1px solid white; */
+    white-space: nowrap;
+    margin: 10px auto;
+    animation: typing 4s steps(200, end), blink-caret .75s step-end infinite;
+}
+
+
+@keyframes typing{
+    from {width: 0} to {width: 100%}
+}
+
+#easyImage{
+    width: 100px;
+}
+
+/* style="-webkit-transform: scaleX(-1);
+   transform: scaleX(-1);" */
+
+
+#arrow{
+    font-size: 20px;
+    color: #e7b748;
+}
+
+#easyH4{
+    padding: 40px 0 30px;
+}
+
+.card-img-overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgBox{
+    position: relative;
+    overflow: hidden;
+}
+
+.imgBox img{
+    max-width: 100%;
+    transition: all 1s;
+    -webkit-transition: all 0.9s;
+    opacity: 0.6;
+}
+
+#cityHover:hover .imgBox img{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.border {
+    display: block;
+    width: 700px;
+    height: 1px;
+    background: #f1cd8f;
+    margin: 2px auto 25px auto;
+}
+
+#indicator{
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+#downLink{
+    color: black;
+    font-size: 20px;
+}
+
+#downIcon{
+    color: black;
+    font-size: 25px;
+    margin: 10px;
+}
+
+
+
+#footerLinks{
+    color: black;
+    font-size: 17px;
+    padding: 0px 10px;
+    transition: all 0.4s;
+}
+
+#footerLinks:hover{
+    color: red;
+}
+
+
+
